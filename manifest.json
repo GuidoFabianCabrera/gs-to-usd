@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Conversor de Precios",
+  "version": "1.0",
+  "description": "Convierte precios de guaraníes a dólares automáticamente.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://nissei.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
