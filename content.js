@@ -1,13 +1,13 @@
-// Tasa de cambio: 1 dólar = 7,000 guaraníes
-const exchangeRate = 7799.33 ;
+// Tasa de cambio: 1 dólar = 7,799.33 guaraníes
+const exchangeRate = 7817.72;
 
 // Función para convertir guaraníes a dólares
 function convertToDollars(priceInGuaranies) {
     return (priceInGuaranies / exchangeRate).toFixed(2); // Dos decimales
 }
 
-// Seleccionar todos los elementos con la clase 'price'
-const priceElements = document.querySelectorAll('.price');
+// Seleccionar todos los elementos con la clase 'price' o 'card-title'
+const priceElements = document.querySelectorAll('.price, .card-title.lightning-prod-sale');
 
 // Recorrer los elementos y actualizar el texto
 priceElements.forEach(element => {
